@@ -1,0 +1,823 @@
+/*
+================================================================================
+Digital Thoreau Screen Stylesheet
+================================================================================
+AUTHOR: Christian Wach <needle@haystack.co.uk>
+--------------------------------------------------------------------------------
+NOTES
+
+--------------------------------------------------------------------------------
+*/
+
+
+
+/* Everybody needs a clearfix! */
+.clearfix:before,
+.clearfix:after
+{
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+.clearfix:after
+{
+	clear: both;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+CBOX overrides
+--------------------------------------------------------------------------------
+*/
+
+/* Use for text meant only for screen readers */
+.screen-reader-text
+{
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+body
+{
+	background: none;
+	border-top: none;
+	font: 100%/150% "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body.theme-option
+{
+	background: #fff;
+}
+
+.flex-container .flexslider,
+.flexslider .slides img,
+#top-homepage,
+.top-wrap .sub-menu,
+#sidebar,
+.footer-wrap
+{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/* START adjust page extents */
+#wrapper
+{
+	padding: 0;
+}
+
+.row
+{
+	width: 100%;
+}
+/* END adjust page extents */
+
+#wrapper
+{
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	body #wrapper
+	{
+		margin: 0 10px;
+	}
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Header
+--------------------------------------------------------------------------------
+*/
+
+body.theme-option .top-wrap #header
+{
+	border-radius: 0;
+	background: transparent url("../images/thoreau-header-bg.jpg") 50% 50% no-repeat;
+	background-size: cover;
+	background-position: 50% 80%;
+}
+
+#header #site-title
+{
+	position: absolute;
+	left: 30px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	background: transparent;
+	text-shadow: none;
+}
+
+#header #site-title a
+{
+	display: block;
+	width: 291px;
+	height: 60px;
+	text-indent: -9999px;
+	background: transparent url("../images/thoreau-header-logo.png") 50% 50% no-repeat;
+}
+
+#site-description
+{
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+}
+
+/* Main Menu */
+#main-menu-wrap
+{
+	padding: 0;
+}
+
+#main-menu-wrap .main-menu
+{
+	padding-top: 10px;
+}
+
+.main-menu ul a
+{
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 782px) {
+	html #wpadminbar
+	{
+		z-index: 10000 !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body #wrapper
+	{
+		margin: 0;
+	}
+	body.theme-option #wrapper .top-wrap #header
+	{
+		margin-top: 50px;
+	}
+	body.admin-bar-showing #wrapper .top-wrap #header
+	{
+		margin-top: 45px;
+	}
+	#header #site-title
+	{
+		top: 20px;
+	}
+	.mobile-menu-container
+	{
+		margin-left: 0;
+	}
+	#top-homepage
+	{
+		margin-top: 0;
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	html #wpadminbar
+	{
+		display: block !important;
+	}
+	body.admin-bar-showing #wrapper .top-wrap #header
+	{
+		margin-top: 13px;
+	}
+	body.logged-in.admin-bar-showing .mobile-menu-container
+	{
+		top: -1px;
+	}
+	#content
+	{
+		padding-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	body.theme-option .top-wrap #header
+	{
+		height: 100px;
+	}
+	#content
+	{
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#site-title
+	{
+		top: 20px !important;
+	}
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Sidebar
+--------------------------------------------------------------------------------
+*/
+
+body.theme-option #sidebar
+{
+	background: #f5f8fa;
+	background-color: #f5f8fa;
+}
+
+#sidebar
+{
+	text-shadow: none;
+}
+
+.sidebar-activity-tabs ul li,
+div#subnav.item-list-tabs
+{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.sidebar-activity-tabs ul li
+{
+	background: none;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.profile-subnav li
+{
+	background: #333;
+	border-bottom: none;
+}
+
+body.activity.directory div.item-list-tabs ul li.last,
+div.item-list-tabs ul li.feed
+{
+	background: none;
+	background-color: transparent;
+	border-bottom: none;
+}
+
+#group-blog:before,
+#nav-group-blog:before
+{
+	content: "C";
+}
+
+.widget_bp_groups_widget ul.item-list li,
+.widget_bp_core_members_widget ul.item-list li
+{
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Footer
+--------------------------------------------------------------------------------
+*/
+
+body.theme-option .footer-wrap
+{
+	background: none;
+	background-color: #fff;
+	border: none;
+}
+
+#footer
+{
+	padding-bottom: 0;
+}
+
+.footer-widgets.row
+{
+	padding-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.columns.footer-widget,
+	#footer-widget-right
+	{
+		width: 33% !important;
+		float: left;
+	}
+}
+
+#powered-by
+{
+	background-color: transparent;
+	border: none;
+	padding-top: 10px;
+}
+
+#copyright-info
+{
+	width: auto;
+	text-align: center;
+	color: #666;
+	padding: 10px 0 20px 0;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Homepage
+--------------------------------------------------------------------------------
+*/
+
+#top-homepage
+{
+	/*
+	margin: -30px -30px 20px;
+	background-color: #01c7e4;
+	background-image: none;
+	background-repeat: no-repeat;
+	background: #01c7e4;
+	background: -webkit-gradient(linear,left top,left bottom,from(#01c7e4),to(#53d6dc));
+	background: -moz-linear-gradient(top,#01c7e4,#53d6dc);
+	background: #f6f6f6;
+	*/
+	text-shadow: none;
+	background-image: url('../images/thoreau-cursive-script.jpg');
+	background-size: cover;
+}
+
+/* Style homepage Call to Action */
+#homepage-sidebar .widget.widget_text
+{
+	text-shadow: 0 0 5px #fff;
+	font-weight: bold;
+}
+
+#homepage-sidebar .widget.widget_text h4
+{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#homepage-sidebar .widget.widget_text ul
+{
+	list-style-position: outside;
+	padding-left: 1.3em;
+}
+
+#homepage-sidebar .widget.widget_text li
+{
+	margin: 0.5em 0;
+}
+
+div.calltoaction
+{
+	margin: 2em 0 1em 0;
+}
+
+a.calltoaction
+{
+	font-family: sans-serif;
+	font-size: 130%;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+	box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+	display: inline;
+	padding: 6px 28px;
+	outline: none!important;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	line-height: 16px;
+	-moz-box-sizing: border-box!important;
+	-webkit-box-sizing: border-box!important;
+	box-sizing: border-box!important;
+	background: #45b2b7;
+	background: -webkit-gradient(linear,left top,left bottom,from(#45b2b7),to(#4dc6cc));
+	background: -moz-linear-gradient(top,#45b2b7,#4dc6cc);
+	text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+	border: 1px solid #561;
+	color: #fff;
+}
+
+.home-page .main-wrap.row
+{
+	border: none;
+	background-color: #f5f8fa;
+}
+
+
+/*
+--------------------------------------------------------------------------------
+Homepage Slider
+--------------------------------------------------------------------------------
+*/
+
+.slide-video-embed p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider .bx-wrapper .bx-viewport
+{
+	left: 0;
+	/* min-height: 320px; */
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+BuddyPress overrides
+--------------------------------------------------------------------------------
+*/
+
+body.directory #content
+{
+	padding-bottom: 0;
+}
+
+/* we seem to be missing the clear definition */
+ul.item-list li .clear
+{
+	clear: both;
+}
+
+ul.item-list .generic-button
+{
+	margin-right: 5px;
+}
+
+.item-list-tabs * a:before,
+#item-buttons * a:before,
+.sidebar-activity-tabs * a:before,
+.button:before,
+#message p:before,
+#subnav * :before,
+#category-title:before,
+#tag-title:before,
+span.post-tags:before,
+.generic-button a:before,
+#category-title:before,
+#tag-title:before,
+span.post-tags:before,
+.post-meta-data *:before,
+.post-title:before,
+#author-description h3:before,
+.single_add_to_cart_button:before,
+.load-more a:before,
+.main-menu * :before,
+.link-home h2 a:before,
+div.link-vote-panel div.clickers a.up:before,
+#bbpress-forums .bbp-forums-list li a:before,
+#favorite-toggle:before,
+#subscription-toggle:before,
+.single-topic h1:before,
+.group-forum-topic #bbpress-forums h3:before
+{
+	line-height: 0;
+	padding-right: 5px;
+}
+
+#content ul.item-list li
+{
+	border-bottom: 1px solid #eee;
+}
+
+#pag-top,
+#pag-bottom
+{
+	margin: -8px -30px 0 -30px;
+	padding: 0px 10px;
+	background: none;
+	border-bottom: 1px solid #eee;
+}
+
+div#pag-bottom
+{
+	margin: 12px -30px 0 -30px;
+	padding: 0px 10px;
+}
+
+div.pagination .pag-count
+{
+	line-height: 0;
+}
+
+body.directory #content,
+body.group-home #content
+{
+	padding-bottom: 0;
+}
+
+.activity-list li.load-more a:hover
+{
+	text-decoration: none;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Member Profile & Signup fixes
+--------------------------------------------------------------------------------
+*/
+
+#profile-edit-form .editfield,
+#profile-details-section .editfield
+{
+	margin-bottom: 1.5em;
+}
+
+#profile-edit-form legend,
+#profile-details-section legend
+{
+	color: #666;
+	display: block;
+	font-size: 80%;
+	font-weight: bold;
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Groups Directory
+--------------------------------------------------------------------------------
+*/
+
+#pag-top
+{
+	margin: -8px -30px 0 -30px;
+	padding: 0px 10px;
+}
+
+body.groups ul#groups-list
+{
+	margin: 0;
+}
+
+body.groups #content ul#groups-list.item-list > li
+{
+	clear: left;
+}
+
+body.groups #content ul#groups-list.item-list div.item-avatar
+{
+	width: 160px;
+	height: 160px;
+}
+
+body.groups #content ul#groups-list.item-list li img.avatar
+{
+	width: 150px;
+	height: 150px;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+User Homepage
+--------------------------------------------------------------------------------
+*/
+
+body.bp-user #item-header
+{
+	margin: -10px -30px 0 -30px;
+	padding: 30px 30px 10px 30px;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Joyride fixes
+--------------------------------------------------------------------------------
+*/
+
+.joyride-tip-guide .joyride-next-tip.button:hover
+{
+	padding: 2px 16px 3px;
+}
+
+.joyride-tip-guide a.joyride-next-tip,
+.joyride-tip-guide a.joyride-next-tip:hover
+{
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+Widget fixes
+--------------------------------------------------------------------------------
+*/
+
+.widget.widget_rss ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-position: outside;
+}
+
+.widget.widget_rss ul li
+{
+	margin: 0 0 1em 0;
+	padding: 0 0 1em 0;
+	list-style: none;
+	list-style-image: none;
+	border-bottom: 1px solid #eee;
+}
+
+.widget.widget_rss ul li > a
+{
+	font-weight: bold;
+}
+
+.widget.widget_twitter_timeline iframe
+{
+	width: 100% !important;
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+BuddyPress Followers compatibility
+--------------------------------------------------------------------------------
+*/
+
+#user-members-following:before
+{
+	content: "*";
+}
+
+#user-members-followers:before
+{
+	content: "W";
+}
+
+
+
+/*
+--------------------------------------------------------------------------------
+BP Group Sites compatibility
+--------------------------------------------------------------------------------
+*/
+
+body.bpgsites #blogs-list:after,
+body.groups.texts #blogs-list.group-groupsites-list:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+body.bpgsites #blogs-list li,
+body #blogs-list.group-groupsites-list li
+{
+	width: 260px;
+	float: left;
+	margin: 0;
+	padding: 1em 0;
+	border: none;
+	min-height: 460px;
+}
+
+body.bpgsites #blogs-list div.item-avatar,
+body #blogs-list.group-groupsites-list div.item-avatar
+{
+	width: 210px;
+	height: auto;
+	float: none;
+	margin: 0 auto;
+}
+
+body.bpgsites ul.item-list li img.avatar,
+body ul.item-list.group-groupsites-list li img.avatar
+{
+	width: 210px;
+	height: auto;
+	-webkit-box-shadow: #ccc 0 0 15px;
+	-moz-box-shadow: #ccc 0 0 15px;
+	-khtml-box-shadow: #ccc 0 0 15px;
+	box-shadow: #ccc 0 0 15px;
+}
+
+body.bpgsites ul.item-list li div.item,
+body ul.item-list.group-groupsites-list li div.item
+{
+	clear: left;
+	text-align: center;
+}
+
+body.bpgsites ul.item-list li div.item-title,
+body ul.item-list.group-groupsites-list li div.item-title
+{
+	font-size: 140%;
+	line-height: 1.5;
+}
+
+body.bpgsites ul.item-list li div.action,
+body ul.item-list.group-groupsites-list li div.action
+{
+	  top: 10px;
+	  right: 0;
+}
+
+
+
+/* List of sites widget */
+body ul.item-list.bpgsites-list li:first-child
+{
+	padding-top: 5px;
+}
+
+body ul.item-list.bpgsites-list div.item-avatar
+{
+	width: 150px;
+	height: auto;
+	margin: 0 15px 0 0;
+}
+
+body ul.item-list.bpgsites-list li img.avatar
+{
+	width: 150px;
+	height: auto;
+	-webkit-box-shadow: #ccc 0 0 5px;
+	-moz-box-shadow: #ccc 0 0 5px;
+	-khtml-box-shadow: #ccc 0 0 5px;
+	box-shadow: #ccc 0 0 5px;
+}
+
+body ul.item-list.bpgsites-list li .item-title
+{
+	font-weight: bold;
+}
+
+
+
+/* Select2 tweak */
+.select2-container
+{
+	margin-top: -37px;
+}
+
+.bpgsites_group_linkages_invite .bpgsites_group_linkage_heading
+{
+	margin-bottom: 30px;
+}
+
+.bpgsites_group_linkages_invite .bpgsites_invite_actions
+{
+	margin-top: -20px;
+}
+
+
