@@ -1,10 +1,10 @@
 # Digital Thoreau CBOX Child Theme
 
-A WordPress child theme of the "CBOX Theme" theme for the main site on the [the "Readers' Thoreau" website](https://commons.digitalthoreau.org/).
+A WordPress child theme of the "CBOX Theme" theme for the main site on [the "Readers' Thoreau" website](https://commons.digitalthoreau.org/).
 
 ## Description
 
-This repo holds the code for the WordPress child theme of the "CBOX Theme" theme for the main site on the [the "Readers' Thoreau" website](https://commons.digitalthoreau.org/).
+This repo holds the code for the WordPress child theme of the "CBOX Theme" theme for the main site on [the "Readers' Thoreau" website](https://commons.digitalthoreau.org/).
 
 ## Installation
 
