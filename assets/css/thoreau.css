@@ -549,6 +549,12 @@ body.group-home #content
 	padding-bottom: 0;
 }
 
+/* Hides container on mini items. */
+.activity-item.mini .activity-inner
+{
+    display: none;
+}
+
 .activity-list li.load-more a:hover
 {
 	text-decoration: none;
