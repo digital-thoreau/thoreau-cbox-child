@@ -117,12 +117,14 @@
 
 									</div>
 								<?php else : ?>
-									<div class="field-visibility-settings-notoggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
+									<p class="field-visibility-settings-notoggle" id="field-visibility-settings-toggle-<?php bp_the_profile_field_id() ?>">
 										<?php printf( __( 'This field can be seen by: <span class="current-visibility-level">%s</span>', 'buddypress' ), bp_get_the_profile_field_visibility_level_label() ) ?>
-									</div>
+									</p>
 								<?php endif ?>
 
 								<?php do_action( 'bp_custom_profile_edit_fields' ); ?>
+
+								<p class="description"><?php bp_the_profile_field_description(); ?></p>
 
 							</div>
 
